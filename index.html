@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script async src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="heading">Cash register manager</h1>
+        <p class="subheading">Enter the bill amount and cash given by the customer to know the minimum number of notes
+            to
+            return to the customer</p>
+    </header>
+
+    <main class="container">
+        <div class="inputs">
+
+            <div class="input-container">
+                <label class="bill-given input" for="bill-amount">Bill Amount:</label>
+                <input class="bill-amount" type="number" />
+            </div>
+            <div class="input-container">
+                <label class="cash-given input" for="cash-given">Cash Given:</label>
+                <input class="cash-amount" type="number" />
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="btn">Calculate</button>
+        </div>
+
+        <div class="error">
+            <p class="error-message"></p>
+        </div>
+
+        <div class="currency-table">
+            <div class="change-table">
+                <section class="table-flex">
+                    <div class="title value">Note in Rupee</div>
+                    <div class="value">2000</div>
+                    <div class="value">500</div>
+                    <div class="value">100</div>
+                    <div class="value">20</div>
+                    <div class="value">10</div>
+                    <div class="value">5</div>
+                    <div class="value">1</div>
+                </section>
+                <section class="table-flex">
+                    <div class="title notes">No of Notes</div>
+                    <div id="0" class="notes">0</div>
+                    <div id="1" class="notes">0</div>
+                    <div id="2" class="notes">0</div>
+                    <div id="3" class="notes">0</div>
+                    <div id="4" class="notes">0</div>
+                    <div id="5" class="notes">0</div>
+                    <div id="6" class="notes">0</div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="container">
+        <div class="con-flex">
+            <h3>Connect with me</h3>
+            <a href="https://twitter.com/itsmebipul00" class="svg" target="_blank">
+                <img alt="Bipul Sharma | Twitter" width="22px"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/bipul-sharma-69b7751a0/" class="svg" target="_blank">
+                <img alt="Bipul's LinkdeIN" width="22px"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+            </a>
+            <a href="https://github.com/itsmebipul00" class="svg" target="_blank">
+                <img alt="Bipul's Github" width="22px"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

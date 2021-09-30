@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+/* Layout */
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+/* Inputs */
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.input-container{
+    margin: 1em;
+}
+
+.input{
+    margin-right: 1em;
+} 
+
+/* Table */
+.change-table{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    
+}
+
+.table-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.notes, .value{
+    padding: 0.5em;
+    border: 1px solid black;
+    width: 90px;
+}
+
+.svg{
+    margin: 1em;
+    padding: 0.5em;
+  }
+
+  .con-flex{
+    margin-top: 2em;
+  }
+
+  .btn{
+      background: green;
+      padding: 0.3em 1em;
+      color: white;
+  }
+
+  .btn:focus,
+  .btn:hover{
+      background: black;
+      color: white;
+  }
+
+/* Small Screens */
+@media(min-width: 600px){
+    .inputs{
+        flex-direction: row;
+    }
+    .change-table{
+        flex-direction: column;
+    }
+    .table-flex{
+        flex-direction: row;
+    }
+}
