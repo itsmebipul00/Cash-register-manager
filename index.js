@@ -10,18 +10,25 @@ button.addEventListener('click', function validateAmount(){
     // location.reload();
 
     if(billAmount.value > 0){
-        if(cashAmount.value < billAmount.value){
+        // console.log(cashAmount.value, billAmount.value)
+        if(Number(cashAmount.value) < Number(billAmount.value)){
             const val= -(cashAmount.value- billAmount.value);
+            console.log(val)
             errorMsg.innerText= `You paid ${cashAmount.value}. You need to pay ${val} rupees more`;
-            reload()
+            for(let i=0; i<availableNotes.length; i++){
+                notes[i+1].innerText = 0;
+            }
         }else{
             const amtReturn= cashAmount.value- billAmount.value;
             console.log(amtReturn);
             calcChange(amtReturn);
+            errorMsg.innerText= '';
         }
     }else{
         errorMsg.innerText= 'Invalid bill amount';
-        reload()
+        for(let i=0; i<availableNotes.length; i++){
+            notes[i+1].innerText = 0;
+        }
     }
 })
 
@@ -35,11 +42,6 @@ function calcChange(amtReturn){
         notes[i+1].innerText =noOfNotes;
      
     }
-    reload()
+
 }
 
-function reload(){
-    setTimeout(function(){
-        location.reload();
-    },4000);
-}

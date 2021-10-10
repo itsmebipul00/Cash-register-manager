@@ -6,7 +6,7 @@ body{
 /* Layout */
 .container{
     max-width: 750px;
-    margin: 0 auto;
+    margin: 3em auto;
     padding: 0 2em;
 }
 
@@ -23,7 +23,16 @@ body{
 
 .input{
     margin-right: 1em;
+}
+
+input{
+    transform: scale(1);
+    transition: transform 250ms;
 } 
+
+input:hover{
+    transform: scale(1.1);
+}
 
 /* Table */
 .change-table{
@@ -52,12 +61,20 @@ body{
 
   .con-flex{
     margin-top: 2em;
+    
+  }
+
+  footer{
+    background: gainsboro;
+    padding: 0.1em 0;
   }
 
   .btn{
       background: green;
-      padding: 0.3em 1em;
+      padding: 0.7em 2em;
       color: white;
+      font-size: 1rem;
+      margin-bottom: 2em;
   }
 
   .btn:focus,
